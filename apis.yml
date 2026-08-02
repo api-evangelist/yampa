@@ -1,7 +1,30 @@
 aid: yampa
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/yampa.png
 name: Yampa
-description: 'Yampa is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: AI/ML. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Yampa is a Paris-based B2B platform for deploying and operating fleets of
+  autonomous AI agents that handle customer service end-to-end across voice,
+  chat, email, ticketing, and messaging channels. Its Y.core orchestration
+  platform provides a visual workflow builder, guardrails, a knowledge layer,
+  multichannel orchestration, QA and auditing tools, and observability, with
+  connectors to CRMs, helpdesks, and telephony systems (Salesforce, Zendesk,
+  Intercom, Twilio, Genesys, and others). Founded in 2024 by Marin Huet,
+  Baptiste Saintot, and Patrice Mazoyer, Yampa raised a ~EUR 3M seed led by
+  Partech and emphasizes sovereign EU-hosted infrastructure with GDPR and SOC 2
+  aligned security. Developer documentation at docs.yampa.ai is gated behind an
+  access code; the public status page lists an API component alongside chat,
+  email, calls, and console services.
 url: https://raw.githubusercontent.com/api-evangelist/yampa/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +33,24 @@ x-backed-by:
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai/Ml
+- AI Agents
+- Customer Service
+- Contact Centers
+- Voice
+- Chat
+- Email
+- SaaS
+- France
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +60,29 @@ maintainers:
 common:
 - type: Website
   url: https://www.yampa.ai/
+- type: Documentation
+  url: https://docs.yampa.ai/
+- type: Login
+  url: https://console.yampa.ai/
+- type: Blog
+  url: https://www.yampa.ai/news
+- type: GitHubOrganization
+  url: https://github.com/yampa-ai
+- type: StatusPage
+  url: https://status.yampa.ai/
+- type: TrustCenter
+  url: security/yampa-trust-center.yml
+- type: Compliance
+  url: https://app.eu.vanta.com/yampa.ai/trust/iw4926mop7tstkl23byez
+- type: PrivacyPolicy
+  url: https://notion.yampa.ai/Website-Privacy-Policy-14484576cc7b8056967ade9095b641f8
+- type: TermsOfService
+  url: https://notion.yampa.ai/Website-Terms-of-Use-14584576cc7b80099694c162d7100395
+- type: LinkedIn
+  url: https://www.linkedin.com/company/yampa-ai/
+- type: LLMsTxt
+  url: llms/yampa-llms.txt
+- type: Lifecycle
+  url: lifecycle/yampa-lifecycle.yml
+- type: DomainSecurity
+  url: security/yampa-domain-security.yml

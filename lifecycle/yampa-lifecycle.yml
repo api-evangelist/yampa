@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+source: https://status.yampa.ai/ (incident.io); https://www.yampa.ai/ homepage
+versioning:
+  scheme: null
+  docs: null
+  notes: >-
+    No public versioning policy — developer documentation at docs.yampa.ai is
+    gated behind an access code, so any versioning or upgrade policy is not
+    publicly visible.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  notes: No public deprecation policy found (docs gated).
+sla:
+  url: null
+  uptime_target: null
+status_page: https://status.yampa.ai/
+status_page_provider: incident.io
+status_components:
+  - Chat Widget
+  - Emails & Ticketing
+  - Inbound/Outbound calls
+  - Console
+  - API
+notes: >-
+  Public status page (incident.io) observed 2026-07-21 reporting all five
+  components fully operational with 100% uptime for the April-July 2026
+  window. The presence of a dedicated "API" component confirms a customer
+  API surface even though its documentation is gated.
+deprecated_operations: []

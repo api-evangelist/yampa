@@ -1,0 +1,24 @@
+generated: '2026-07-21'
+method: searched
+probe: true
+url: https://app.eu.vanta.com/yampa.ai/trust/iw4926mop7tstkl23byez
+provider: Vanta (EU instance)
+description: >-
+  Yampa publishes a trust center hosted on Vanta's EU instance, linked from the
+  www.yampa.ai homepage ("Trust Center"). The homepage and the provider's own
+  llms.txt state GDPR compliance and SOC 2-aligned/ready controls, EU-based
+  sovereign hosting, enterprise-grade encryption, role-based access, and SSO.
+  The Vanta trust page itself is a JavaScript SPA whose certification list
+  could not be extracted by the automated probe (trust.yampa.ai does not
+  exist); the frameworks below are those the provider claims on its public
+  website and llms.txt, not an audited list read from the trust center.
+certifications:
+  - name: SOC 2
+    note: '"SOC 2 compliant" per www.yampa.ai homepage; "SOC 2-ready controls" per llms.txt.'
+  - name: GDPR
+    note: GDPR compliance stated on homepage and in llms.txt; sovereign EU-based hosting.
+evidence:
+  - source: https://www.yampa.ai/
+    kind: homepage security section linking the Vanta trust center; claims GDPR and SOC 2 compliance
+  - source: https://www.yampa.ai/llms.txt
+    kind: provider llms.txt (security_and_compliance and geo_and_infra fields)

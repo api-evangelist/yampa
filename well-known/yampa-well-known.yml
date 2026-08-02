@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+description: >-
+  Results of probing the /.well-known/ discovery surface for the Yampa hosts
+  found in apis.yml (www.yampa.ai, yampa.ai). Status is the HTTP code observed
+  at fetch time (2026-07-21). No well-known documents were found; note that a
+  real, provider-published llms.txt IS served at the site root
+  (https://www.yampa.ai/llms.txt, captured verbatim in llms/yampa-llms.txt).
+  docs.yampa.ai answers /llms.txt with the gated Mintlify HTML shell, not a
+  real llms.txt, so it is recorded as present-but-not-a-real-document and not
+  saved. api.yampa.ai resolves but returns 404 at the root (the API surface is
+  documented only behind the access-code-gated docs portal).
+hosts:
+  - host: https://www.yampa.ai
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 200
+        type: text/plain
+        file: ../llms/yampa-llms.txt
+  - host: https://yampa.ai
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+  - host: https://docs.yampa.ai
+    documents:
+      - path: /llms.txt
+        status: 200
+        note: text/html Mintlify SPA shell (docs are gated) — not a real llms.txt; not saved
